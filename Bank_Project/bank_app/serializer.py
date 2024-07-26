@@ -15,7 +15,7 @@ class withdrawalSerializer(serializers.ModelSerializer):
 class StatementSerializer(serializers.ModelSerializer):
     class Meta:
         model = Statement
-        fiels = ['amount','balance']
+        fields = '__all__'
 
 class TransferModelSerializer(serializers.ModelSerializer):
     class Meta:

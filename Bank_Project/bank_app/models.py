@@ -15,6 +15,7 @@ class Account(models.Model):
         ('current', 'Current'),
         ('IBAN', 'IBAN')
     )
+    
     pin = models.IntegerField()
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     ifsc = models.CharField(max_length=11)
@@ -24,13 +25,20 @@ class Account(models.Model):
     bank_address= models.CharField(max_length=225)
 
     def __str__(self):
+        
         return f"Account of {self.user}: {self.account_number}"
 
 class Statement(models.Model):
+    TRANSACTION_TYPES = (
+        ('credit', 'Credit'),
+        ('debit', 'Debit'),
+    )
     account = models.ForeignKey(Account, on_delete=models.CASCADE,related_name="account")
     date = models.DateField(auto_now_add=True)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     balance = models.DecimalField(max_digits=12, decimal_places=2)
+    transaction_type = models.CharField(max_length=20, choices=TRANSACTION_TYPES)
 
     def __str__(self):
+        sign = '+' if self.transaction_type == 'credit' else '-'
         return f"Statement for {self.amount} on {self.date}"
