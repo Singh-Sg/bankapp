@@ -1,0 +1,262 @@
+No statements found for account number 987654321.
+Not Found: /api/StatementAPIView/987654321/
+Not Found: /favicon.ico
+Method Not Allowed: /api/transfer/
+Not Found: /api/transfer/
+Incorrect PIN provided for account 987654321.
+Bad Request: /api/withdrawal/987654321/
+Incorrect PIN provided for account 987654321.
+Bad Request: /api/withdrawal/987654321/
+Deposit failed: {'pin': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/deposit/987654321/
+Withdrawal failed: {'pin': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/withdrawal/987654321/
+Withdrawal failed: {'pin': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/withdrawal/987654321/
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 204, in patch
+    amount = serializer.validated_data["balance"]
+KeyError: 'balance'
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 204, in patch
+    amount = serializer.validated_data["amount"]
+KeyError: 'amount'
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 203, in patch
+    if serializer.is_valid():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 1103, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 1249, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 1367, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `amount` is not valid for model `Account` in `bank_app.serializer.withdrawalSerializer`.
+Withdrawal failed: {'pin': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/withdrawal/987654321/
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 204, in patch
+    amount = serializer.validated_data["amount"]
+KeyError: 'amount'
+Incorrect PIN provided for account 987654321.
+Bad Request: /api/withdrawal/987654321/
+Deposit failed: {'pin': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/deposit/987654321/
+Internal Server Error: /api/deposit/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 166, in patch
+    amount = serializer.validated_data["amount"]
+KeyError: 'amount'
+Withdrawal failed: {'amount': [ErrorDetail(string='This field is required.', code='required')]}
+Bad Request: /api/withdrawal/987654321/
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 205, in patch
+    pin = serializer.validated_data["pin"]
+KeyError: 'pin'
+Internal Server Error: /api/withdrawal/987654321/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/Bank_Project/bank_app/views.py", line 203, in patch
+    if serializer.is_valid():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 223, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 442, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 495, in to_internal_value
+    for field in fields:
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 378, in _writable_fields
+    for field in self.fields.values():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 372, in fields
+    for key, value in self.get_fields().items():
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 1079, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/rest_framework/serializers.py", line 1175, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'pin' was declared on serializer withdrawalSerializer, but has not been included in the 'fields' option.
+Incorrect PIN provided for account 987654321.
+Bad Request: /api/withdrawal/987654321/
+Internal Server Error: /admin/bank_app/statement/
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such column: bank_app_account.branch_name
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/contrib/admin/options.py", line 716, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2124, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/models/query.py", line 382, in __len__
+    self._fetch_all()
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/groot/Projects/BankProject/env/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 329, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such column: bank_app_account.branch_name
