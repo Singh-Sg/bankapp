@@ -9,7 +9,6 @@ class DepositSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
         fields = ["amount"]
-        # read_only_fields = ['id', 'date']
 
 
 class withdrawalSerializer(serializers.ModelSerializer):
@@ -65,5 +64,5 @@ class TransferModelSerializer(serializers.ModelSerializer):
         # Check if the sender has enough balance
         if from_account.balance < amount:
             raise serializers.ValidationError("Insufficient balance.")
-
+        
         return data

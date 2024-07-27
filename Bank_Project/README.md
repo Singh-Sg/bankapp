@@ -3,43 +3,9 @@
 ## Overview
 
 This Django project implements a banking application with the following features:
-- User management
-- Account management
 - Deposit and withdrawal functionalities
 - Money transfer between accounts
 - Transaction statements
-
-## Models
-
-### User
-
-Represents a user in the banking system.
-
-- `first_name` (CharField): User's first name
-- `last_name` (CharField): User's last name
-- `contact_number` (CharField): User's contact number
-
-### Account
-
-Represents a bank account associated with a user.
-
-- `pin` (IntegerField): Security PIN for the account
-- `user` (OneToOneField): Link to the User model
-- `ifsc` (CharField): IFSC code of the branch
-- `account_number` (CharField): Unique account number
-- `branch_name` (CharField): Name of the branch
-- `balance` (DecimalField): Current balance in the account
-- `account_type` (CharField): Type of the account (Savings, Current, IBAN)
-- `bank_address` (CharField): Address of the bank
-
-### Statement
-
-Represents a transaction statement for an account.
-
-- `account` (ForeignKey): Link to the Account model
-- `date` (DateField): Date of the transaction
-- `amount` (DecimalField): Amount of the transaction
-- `balance` (DecimalField): Balance after the transaction
 
 ## API Endpoints
 
@@ -79,7 +45,7 @@ Represents a transaction statement for an account.
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Singh-Sg/bankapp.git>
 
 2. cd <Bank_Project>
 3. python -m venv env
@@ -88,6 +54,4 @@ Represents a transaction statement for an account.
 5. python manage.py migrate
 6. python manage.py createsuperuser
 7. python manage.py runserver
-
-
 
