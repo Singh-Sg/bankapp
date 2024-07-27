@@ -1,13 +1,12 @@
-# Python bytecode files
-
 __pycache__/
-
-# Django migration files
 *.log
 *.sqlite3
 db.sqlite3
-
-
+*.pyc
+*.pyo
+*.pyd
+warning.log
+django.log
 # Environment variables and secrets
 .env
 *.env
