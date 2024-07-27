@@ -1,0 +1,34 @@
+.css-d9ml5t-MuiDrawer-docked .MuiDrawer-paper {
+  background-color: black;
+}
+
+.css-10hburv-MuiTypography-root {
+  color: white;
+}
+
+.icon-white {
+  color: white !important;
+}
+
+.css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root {
+  padding-top: 100px;
+}
+
+.css-h4y409-MuiList-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding-top: 93px !important;
+  padding-bottom: 8px;
+}
+
+.css-10hburv-MuiTypography-root {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  line-height: 2.0 !important;
+  letter-spacing: 0.00938em;
+  display: block;
+}
