@@ -28,12 +28,15 @@ class Account(models.Model):
 
 
 class Statement(models.Model):
+    STATEMENT_TYPES = (("transfer", "transfer"), ("withdrawal", "withdrawal"), ("deposit", "deposit"))
+
     account = models.ForeignKey(
         Account, on_delete=models.CASCADE, related_name="account"
     )
     date = models.DateField(auto_now_add=True)
     amount = models.DecimalField(max_digits=12, decimal_places=2)
     balance = models.DecimalField(max_digits=12, decimal_places=2)
+    statement_type = models.CharField(max_length=20, choices=STATEMENT_TYPES)
 
     def __str__(self):
         return f"Statement for {self.amount} on {self.date}"

@@ -20,7 +20,7 @@ admin.site.register(Account, AccountAdmin)
 
 
 class StatementAdmin(admin.ModelAdmin):
-    list_display = ("id", "account", "date", "amount", "balance")
+    list_display = ("id", "account", "date", "amount", "balance","statement_type")
     search_fields = ("account__account_number",)
     list_filter = ("date",)
 
